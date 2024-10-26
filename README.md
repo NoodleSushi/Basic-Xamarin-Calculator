@@ -1,5 +1,5 @@
 # Basic Xamarin Calculator
-*Developed on March 4, 2023*
+*Development Concluded on March 4, 2023*
 
 A Basic Calculator made in Xamarin
 
