@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="CalcLabel" Text="0" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"
+                FontSize="Header" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+        <Button Text="C" Clicked="OnClearClicked" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="DEL" Clicked="OnDelClicked" Grid.Row="2" Grid.Column="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="/" Clicked="OnOpClicked" ClassId="Div" Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" TextColor="White"/>
+        <Button Text="7" Clicked="OnDigitClicked" ClassId="7" Grid.Row="3" Grid.Column="0" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="8" Clicked="OnDigitClicked" ClassId="8" Grid.Row="3" Grid.Column="1" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="9" Clicked="OnDigitClicked" ClassId="9" Grid.Row="3" Grid.Column="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="X" Clicked="OnOpClicked" ClassId="Mul" Grid.Row="3" Grid.Column="3" BackgroundColor="Orange" TextColor="White"/>
+        <Button Text="4" Clicked="OnDigitClicked" ClassId="4" Grid.Row="4" Grid.Column="0" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="5" Clicked="OnDigitClicked" ClassId="5" Grid.Row="4" Grid.Column="1" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="6" Clicked="OnDigitClicked" ClassId="6" Grid.Row="4" Grid.Column="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="-" Clicked="OnOpClicked" ClassId="Sub" Grid.Row="4" Grid.Column="3" BackgroundColor="Orange" TextColor="White"/>
+        <Button Text="1" Clicked="OnDigitClicked" ClassId="1"  Grid.Row="5" Grid.Column="0" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="2" Clicked="OnDigitClicked" ClassId="2" Grid.Row="5" Grid.Column="1" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="3" Clicked="OnDigitClicked" ClassId="3" Grid.Row="5" Grid.Column="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="+" Clicked="OnOpClicked" ClassId="Add" Grid.Row="5" Grid.Column="3" BackgroundColor="Orange" TextColor="White"/>
+        <Button Text="0" Clicked="OnDigitClicked" ClassId="0" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="." Clicked="OnDecClicked" Grid.Row="6" Grid.Column="2" BackgroundColor="Gray" TextColor="Black"/>
+        <Button Text="=" Clicked="OnEqualsClicked" Grid.Row="6" Grid.Column="3" BackgroundColor="Orange" TextColor="White"/>
+    </Grid>
+
+</ContentPage>
